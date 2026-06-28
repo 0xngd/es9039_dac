@@ -52,30 +52,24 @@
         "zones": {
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 0.5,
-          "corner_smoothing": 2,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.2,
+          "min_clearance": 0.5,
           "min_island_area": 10.0,
-          "min_thickness": 0.15,
+          "min_thickness": 0.25,
           "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.3,
-          "thermal_relief_spoke_width": 0.3
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -125,7 +119,7 @@
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "ignore",
+        "starved_thermal": "error",
         "text_height": "warning",
         "text_on_edge_cuts": "error",
         "text_thickness": "warning",
@@ -209,9 +203,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -238,12 +230,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -659,15 +646,33 @@
         "filename": "es9039_dac.kicad_sch",
         "name": "es9039_dac",
         "uuid": "0532062d-54be-46fa-be35-9f4cc17a889d"
+      },
+      {
+        "filename": "output_stage.kicad_sch",
+        "name": "output_stage",
+        "uuid": "47c411d8-44e2-450d-908b-0e7677743dac"
+      },
+      {
+        "filename": "output_stage2.kicad_sch",
+        "name": "output_stage2",
+        "uuid": "bdbdcc8c-b268-4bd9-89c9-eead5f36a92c"
       }
     ],
-    "used_designators": "R6-10,#PWR11-12,#PWR17,#PWR27,#PWR30-39,C2,C5-6,C9-10,C14-19,U4-5",
+    "used_designators": "JP1-2,#PWR2-3,#PWR19-20,#PWR41-57,J2-3,R1-5,R12-40,U6-10,C3,C7,C11,C22-43",
     "variants": []
   },
   "sheets": [
     [
       "0532062d-54be-46fa-be35-9f4cc17a889d",
       "es9039_dac"
+    ],
+    [
+      "47c411d8-44e2-450d-908b-0e7677743dac",
+      "output_stage"
+    ],
+    [
+      "bdbdcc8c-b268-4bd9-89c9-eead5f36a92c",
+      "output_stage2"
     ]
   ],
   "text_variables": {},
