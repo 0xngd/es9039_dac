@@ -120,7 +120,7 @@
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
+        "text_height": "ignore",
         "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -663,7 +663,7 @@
         "uuid": "06679927-dee0-489e-b9c1-6767589729a5"
       }
     ],
-    "used_designators": "JP1-2,#PWR2-3,#PWR19-20,#PWR41-62,J2-7,R1-5,R12-42,U6-10,C3,C7,C11,C22-45",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
