@@ -6890,7 +6890,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:QFN-32_L5.0-W5.0-P0.50-TL-EP3.2"
+		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm_ThermalVias"
 			(at 124.46 80.01 0)
 			(hide yes)
 			(show_name no)

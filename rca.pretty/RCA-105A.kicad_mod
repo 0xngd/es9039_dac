@@ -1,0 +1,159 @@
+(footprint "RCA-105A"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "RCA Connector RCA-105A. Right angle, PCB mount.")
+	(tags "RCA Connector Jack")
+	(property "Reference" "REF**"
+		(at 0 -7 0)
+		(layer "F.SilkS")
+		(uuid "46d5f026-5e7a-4677-bc33-6bb420118911")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RCA-105A"
+		(at 0 10 0)
+		(layer "F.Fab")
+		(uuid "ccf0da94-ccb5-4560-882f-e47f71b20448")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5d5bfcce-cbec-4954-b22f-43b8b4a5a7bf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5dd0a969-150d-4ccf-90cf-91d4b25236ab")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5 0)
+		(end -5 10)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d3d985b7-959e-497d-a12a-213f2fefa145")
+	)
+	(fp_line
+		(start -5 0)
+		(end 5 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3668ebf2-d817-4cfd-964e-03e341f31506")
+	)
+	(fp_line
+		(start -5 10)
+		(end 5 10)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "636e9d85-2d7b-4209-85aa-d75593934e88")
+	)
+	(fp_line
+		(start 5 0)
+		(end 5 10)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cab031c8-772c-439c-94ea-1984ce657097")
+	)
+	(fp_line
+		(start -4.15 -9.3)
+		(end 4.15 -9.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2ebed761-b844-4a1f-8628-5419ae2b5fa9")
+	)
+	(fp_line
+		(start -4.15 0)
+		(end -4.15 -9.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e5ca2219-8abf-4bd4-aecd-6342408a67fd")
+	)
+	(fp_line
+		(start 4.15 0)
+		(end 4.15 -9.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4583285e-eafa-48c0-bb59-49b9969996e0")
+	)
+	(fp_line
+		(start -6 0)
+		(end 6 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Rescue")
+		(uuid "33024d9f-3280-4ece-9db0-fba029db04b7")
+	)
+	(pad "1" thru_hole oval
+		(at 0 4.8)
+		(size 3.5 1.8)
+		(drill oval 2.5 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f7052c71-9b8e-40d2-b86b-714fde4c2449")
+	)
+	(pad "2" thru_hole oval
+		(at 3.75 7.7)
+		(size 1.8 3.5)
+		(drill oval 0.8 2.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9fa7285c-5e04-4996-badb-efecb7c7c8f8")
+	)
+	(pad "3" thru_hole oval
+		(at -3.75 7.7)
+		(size 1.8 3.5)
+		(drill oval 0.8 2.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0d4fd507-a791-42b3-b26d-e3fc97bd0a6d")
+	)
+	(embedded_fonts no)
+)
