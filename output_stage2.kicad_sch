@@ -277,7 +277,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Audio:XLR3"
+		(symbol "Connector_Audio:XLR3_Ground"
 			(pin_names
 				(hide yes)
 			)
@@ -296,7 +296,7 @@
 					)
 				)
 			)
-			(property "Value" "XLR3"
+			(property "Value" "XLR3_Ground"
 				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -328,7 +328,7 @@
 					)
 				)
 			)
-			(property "Description" "XLR Connector, Male or Female, 3 Pins"
+			(property "Description" "XLR Connector, Male or Female, 3 Pins, Discrete Ground Pin"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -361,7 +361,7 @@
 					)
 				)
 			)
-			(symbol "XLR3_0_1"
+			(symbol "XLR3_Ground_0_1"
 				(polyline
 					(pts
 						(xy -5.08 0) (xy -4.572 0)
@@ -377,6 +377,18 @@
 				(circle
 					(center -3.556 0)
 					(radius 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -5.08) (xy -2.54 -4.445)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -516,6 +528,26 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "XLR3_Ground_1_1"
+				(pin passive line
+					(at -2.54 -7.62 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1248,6 +1280,12 @@
 		(uuid "5a640939-5a3d-4633-abd8-f84722b681a5")
 	)
 	(junction
+		(at 172.72 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6478caec-8a67-4f12-90d6-e32ca88ebb9d")
+	)
+	(junction
 		(at 143.51 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1257,7 +1295,7 @@
 		(at 160.02 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7413b8dd-a68c-487f-b91d-61abd480116b")
+		(uuid "79fd4e3f-cf32-4fab-90f2-c188181eb2a3")
 	)
 	(junction
 		(at 100.33 88.9)
@@ -1376,6 +1414,16 @@
 			(type default)
 		)
 		(uuid "03cc4f38-a889-437b-aa9e-3b9835aa9669")
+	)
+	(wire
+		(pts
+			(xy 165.1 77.47) (xy 163.83 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0693c8f6-632a-47b3-ba94-1d0aa7c9f0f7")
 	)
 	(wire
 		(pts
@@ -1589,6 +1637,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 55.88) (xy 163.83 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6806e598-e11b-4806-a67d-784731c9c452")
+	)
+	(wire
+		(pts
 			(xy 160.02 106.68) (xy 172.72 106.68)
 		)
 		(stroke
@@ -1759,16 +1817,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 77.47) (xy 165.1 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "957a54ce-6d27-49d1-8131-c4721fcd6fbf")
-	)
-	(wire
-		(pts
 			(xy 95.25 120.65) (xy 95.25 106.68)
 		)
 		(stroke
@@ -1789,7 +1837,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 55.88) (xy 165.1 55.88)
+			(xy 160.02 55.88) (xy 163.83 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2099,6 +2147,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 74.93) (xy 165.1 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4ab42c6-4ede-460e-a99f-9f11e04708b9")
+	)
+	(wire
+		(pts
 			(xy 143.51 106.68) (xy 151.13 106.68)
 		)
 		(stroke
@@ -2106,6 +2164,16 @@
 			(type default)
 		)
 		(uuid "e9b686d4-e27f-415d-b339-9ef28f3558a2")
+	)
+	(wire
+		(pts
+			(xy 165.1 69.85) (xy 172.72 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb185290-b0e7-47bd-a118-e2be64fdb403")
 	)
 	(wire
 		(pts
@@ -2242,6 +2310,54 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "OUT_Rb"
+		(shape input)
+		(at 172.72 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2f60f4e3-1603-439c-88e1-1a2c4ce0ad38")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.7204 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "OUT_R"
+		(shape input)
+		(at 163.83 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8aba83f3-af8a-4455-940d-cfc64a9df0a9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.6814 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -4764,6 +4880,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Audio:XLR3_Ground")
+		(at 172.72 77.47 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de0c8448-0f68-4ab1-9296-e24d5a160867")
+		(property "Reference" "J3"
+			(at 179.07 76.1999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "XLR_R"
+			(at 179.07 78.7399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Audio:Jack_XLR_Neutrik_NC3MAH-0_Horizontal"
+			(at 172.72 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "XLR Connector, Male or Female, 3 Pins, Discrete Ground Pin"
+			(at 172.72 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "a7f9cde1-5194-4803-a3c8-373f94a7c58b")
+		)
+		(pin "G"
+			(uuid "e7595741-0299-424d-8491-aa3e8ea05856")
+		)
+		(pin "2"
+			(uuid "f15a9265-7ebd-4f65-b414-022e4932ee85")
+		)
+		(pin "1"
+			(uuid "fd5c7b8a-cd31-4484-bc75-6469345edaea")
+		)
+		(instances
+			(project "es9039_dac"
+				(path "/bdbdcc8c-b268-4bd9-89c9-eead5f36a92c"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDA")
 		(at 185.42 69.85 0)
 		(unit 1)
@@ -4835,91 +5039,6 @@
 			(project "es9039_dac"
 				(path "/bdbdcc8c-b268-4bd9-89c9-eead5f36a92c"
 					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:XLR3")
-		(at 172.72 77.47 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f58a44cb-3316-4261-8e4b-895253eac0c2")
-		(property "Reference" "J3"
-			(at 179.07 76.1999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "XLR3"
-			(at 179.07 78.7399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Audio:Jack_XLR_Neutrik_NC3MAH_Horizontal"
-			(at 172.72 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "XLR Connector, Male or Female, 3 Pins"
-			(at 172.72 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "464742ee-4c62-410d-bce0-9b230643246b")
-		)
-		(pin "3"
-			(uuid "b3bfb024-0b30-48b1-8566-ac26e0a5ff3d")
-		)
-		(pin "1"
-			(uuid "1c13f1b8-4f75-4c02-9e7a-4d3418f037ac")
-		)
-		(instances
-			(project "es9039_dac"
-				(path "/bdbdcc8c-b268-4bd9-89c9-eead5f36a92c"
-					(reference "J3")
 					(unit 1)
 				)
 			)

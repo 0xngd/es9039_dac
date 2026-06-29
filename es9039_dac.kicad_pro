@@ -656,9 +656,14 @@
         "filename": "output_stage2.kicad_sch",
         "name": "output_stage2",
         "uuid": "bdbdcc8c-b268-4bd9-89c9-eead5f36a92c"
+      },
+      {
+        "filename": "rca.kicad_sch",
+        "name": "rca",
+        "uuid": "06679927-dee0-489e-b9c1-6767589729a5"
       }
     ],
-    "used_designators": "JP1-2,#PWR2-3,#PWR19-20,#PWR41-57,J2-3,R1-5,R12-40,U6-10,C3,C7,C11,C22-43",
+    "used_designators": "JP1-2,#PWR2-3,#PWR19-20,#PWR41-62,J2-5,R1-5,R12-42,U6-10,C3,C7,C11,C22-45",
     "variants": []
   },
   "sheets": [
@@ -673,6 +678,10 @@
     [
       "bdbdcc8c-b268-4bd9-89c9-eead5f36a92c",
       "output_stage2"
+    ],
+    [
+      "06679927-dee0-489e-b9c1-6767589729a5",
+      "rca"
     ]
   ],
   "text_variables": {},
